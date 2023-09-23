@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
 }
+
 :root{
     --yello-color:rgb(245, 206, 32);
     --black-color:#000;
@@ -21,11 +22,88 @@
     align-items: center;
 
 }
+
+.navbar{
+    background: transparent !important;
+    z-index: 1000;
+    margin-top: 0;
+    top: 0;
+}
 .home-logo ion-icon{
     font-size: 30px;
     padding-bottom: 8px;
     justify-content: space-between;
 }
+nav {
+    padding: 0 !important;
+    color: white;
+}
+
+
+/* start home page  */
+.main span ,.info-number{
+    color: var(--yello-color);
+}
+.main {
+    display: flex;
+    justify-content: center;
+}
+.main h1{
+    color: var(--white-color);
+    font-size: 5rem;
+    font-weight: 600 !important;
+}
+.main-content{
+    padding-top: 100px;
+}
+.line {
+    WIDTH: 512px;
+    background: var(--gray-color);
+    height: 2px;
+    margin: 67px 0px;
+}
+.section1{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(160deg ,var(--gray-dark) 5%,var(--light-black) 45% );
+}
+.content-info h3 {
+    font-size: 1.5rem;
+    color: var(--white-color);
+}
+.content-info small {
+    font-size: 14px;
+    color: var(--gray-color);
+}
+.main h2 {
+    font-size: 23px;
+    word-spacing: 7px;
+    font-weight: 600;
+    color: var(--gray-color);
+    text-align: center;
+}
+.main-content {
+    padding: 100px 0 0 65px;
+}
+@media screen and (max-width: 992px) {
+    .home-img{
+        display: none !important;
+        width: 0;
+    }
+}
+@media screen and (max-width: 550px) {
+    
+    html , body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+}
+
+
+/* end home page */
 .view-site p{
     color: var(--white-color);
     font-size: 18px;
@@ -119,9 +197,7 @@
 .card-img-top{
     height: 380px;
 }
-.row {
-    margin-top: 30px;
-}
+
 .prog1 P{
     width: 55%;
 }
@@ -255,7 +331,9 @@ form {
     
 
 }
-
+#header{
+    padding: 15px;
+}
 .form small{
     position: absolute;
     margin: 7px 13px;
@@ -298,3 +376,30 @@ form {
 .your-name ,.email , .password {
     width: 100%;
 }
+nav a:hover{
+    font-size: 20px;
+    padding: 10px 15px;
+    background: var(--yello-color);
+    border-radius: 23px;
+}
+/* changing color (scroll header) */
+.scroll-header{
+    background-color: white;
+    width: 100%;
+}
+.scroll-header h1 ,
+.scroll-header ion-icon,
+.scroll-header a
+{
+    color: var(--black-color) !important;
+
+}
+ul li a {
+    text-decoration: none;
+    margin: 0 24px;
+    color: var(--white-color) !important;
+    font-size: 19px !important;
+    font-weight: 600 !important;
+    transition: .5s !important;
+}
+

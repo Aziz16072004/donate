@@ -9,8 +9,8 @@
 </head>
 <body>
     
-    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
-        <div class="container-fluid px-md-5" >
+    <nav class="navbar navbar-expand-lg bg-body-tertiary position-fixed w-100" >
+        <div class="container-fluid px-md-5" id="header">
             <div class="home-logo">
             <ion-icon name="home"></ion-icon>
             <h1>Donate</h1>
@@ -38,7 +38,45 @@
           </div>
         </div>
       </nav>
-      <div class="container">
+      
+      <!-- start section 1 -->
+      
+      <section class="section1  row">
+        
+          <div class="main col-12 col-lg-6" >
+            <div class="main-content ">
+                <H1>choose  <br>
+                what you <br>
+                To Donate <span>.</span></H1>
+            
+            <div class="line"></div>
+            <h2 >you can donate .</h2>
+            <div class="info row">
+                <div class="content-info col-6">
+                    <p class="info-number">10K</p>
+                    <H3>Money donation</H3>
+                    <small>you can donate The amount you want to donate</small>
+                </div>
+                <div class="content-info col-6">
+                    <p class="info-number">
+                        4.5K +
+                    </p>
+                    <h3>Food donation</h3>
+                    <small>you can donate food also</small>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="home-img col col-lg-6  h-100">
+            <img src="images/home-image.jpg" class="w-100 h-100" alt="">
+        </div>
+    
+    </section>
+    
+    <!-- end section 1 -->
+    <div class="container">
+
+
         <section class="section2">
             <div class="view-site row">
                 <p class="col-9">Nomber of participants this site</p>
@@ -254,6 +292,7 @@
             
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="./js/main.js"></script>
     <script>
         function validateForm(){
         // email validate
