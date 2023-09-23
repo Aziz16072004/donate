@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --yello-color:rgb(245, 206, 32);
+    --black-color:#000;
+    --white-color:#fff;
+    --gray-color:rgb(152, 152, 152);
+    --light-black:rgb(53, 53, 53);
+    --gray-dark:rgb(115, 115, 115);
+    --span-color-header:#fff;
+    --blue-color: #1d0cda;
+
+}
+/* theme , changin colors */
+
+.dark-theme{
+    --white-color:#000;
+    --light-black:rgb(233, 233, 233);
+    --gray-dark:rgb(255, 255, 255);
+
+}
+header{
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    padding: 0 228px;
+    display: grid;
+    grid-template-columns:  59.3% 96% 32%;
+    z-index: 1000;
+}
+header ul li {
+    list-style-type: none;
+}
+header ul ,.logo{
+    display: flex;
+    align-items: center;
+
+}
+.span{
+    color: var(--span-color-header);
+}
+nav ul a{
+    text-decoration: none;
+    margin: 0 24px;
+    color: var(--white-color);
+    
+    font-size: 19px;
+    font-weight: 600;
+    transition: .5s;
+
+
+}
+.logo h1{
+    color: var(--white-color);
+}
+.theme img{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+header ion-icon{
+    font-size: 27px;
+    margin-right: 18px;
+    color: var(--white-color);
+}
+.home{
+
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(160deg ,var(--gray-dark) 5%,var(--light-black) 45% );
+
+}
+/* ========================content of home============================ */
+.section1 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.main span ,.info-number{
+    color: var(--yello-color);
+}
+.main h1{
+    color: var(--white-color);
+    
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 85px;
+
+}
+
+.main{
+    margin: 117px 0px 0px 231px;
+}
+
+.home-img img{
+    width: 100%;
+
+    height: 100vh;
+}
+
+
+.line{
+    WIDTH: 512px;
+    background: var(--gray-color);
+    height: 2px;
+    margin: 67px 0px;
+}
+.info{
+    display: flex;
+    width: 415px;
+    margin: 41px 57px;
+}
+.content-info h3{
+    font-size: 1.5rem;
+    color: var(--white-color);
+
+}
+.content-info {
+    width: 62%;
+    margin: 0 35px 0 0;
+}
+
+
+.main h2{
+    font-size: 23px;
+    word-spacing: 7px;
+    font-weight: 600;
+    color: var(--gray-color);
+    margin: 24px 97px;
+
+}
+.content-info small{
+    
+    font-size: 14px;
+    color: var(--gray-color);
+
+}
+
+/* changing color (scroll header) */
+.scroll-header{
+    background-color: white;
+    width: 100%;
+}
+.scroll-header h1 ,
+.scroll-header ion-icon,
+.scroll-header a,
+.scroll-header .span
+{
+    color: var(--black-color);
+
+}
+
+
+
+
+.section2 , .section3, form{
+    width: 60%;
+    height: 100vh;
+    margin: 10px auto;
+}
+.view-site{
+    background-color: var(--black-color);
+    height: 43px;
+    padding: 10px 42px 0 42px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.view-site p{
+    color: var(--white-color);
+    font-size: 18px;
+    word-spacing: 4px;
+    font-weight: 600;
+}
+.view-site span{
+    color: var(--white-color);
+}
+.section2 h3{
+    color: var(--black-color);
+    line-height: 51px;
+}
+.you-can-donate {
+    display: grid;
+    gap: 6px;
+    grid-template-columns: repeat(3 , 33%);
+}
+.donation:hover{
+    transform: translateY(-10px);
+    box-shadow: -3px 10px 20px #a9a9a9;
+}
+.donation{
+    background-color: rgb(255, 255, 255);
+    height: 446px;
+    gap: 3px 3px;
+    border-radius: 20px;
+    box-shadow: -2px 3px 20px #bdbdbd7a;
+    transition: all .5s;
+    position: relative;
+}
+.scrollup{
+    margin-bottom:-30%;
+    }
+.show-scroll {
+    margin-bottom:3rem;
+    }
+.image{
+    height: 111px;
+    width: 111px;
+    margin: 60px 140px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 20px #bbbbbbb8;
+}
+
+.donation h3{
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--black-color);
+
+}
+.person h4 ,.view h4{
+    font-weight: 600;
+    margin: 0 13px 0px 11px;
+}
+.person ,.view{
+    display: flex;
+    align-items: center;
+    margin: 7px 19px;
+}
+.btn{
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 16px 138px;
+    border-radius: 15px;
+    transition:all .4s;
+}
+.btn:hover{
+    background-color: var(--blue-color);
+    color: white;
+    BOX-SHADOW: 2px 6px 7px #959595b7;
+}
+.section3 .view-site{
+    margin: 37px 0;
+}
+
+.prog{
+    width: 90%;
+    height: 22px;
+    border-radius: 27px;
+    background-color: var(--gray-color);
+    margin: 23px auto;
+    position: relative;
+
+}
+.prog p{
+    position: absolute;
+    background-color: var(--blue-color);
+    height: 22px;
+    border-radius: 27px;
+
+}
+.section3{
+    height: 300px ;
+}
+.prog1 P{
+    width: 55%;
+}
+.prog2 p{
+    width: 90% ;
+}
+.prog3 p{
+    width: 15% ;
+}
+
+.progresse h4{
+    margin: -11px 63px;
+
+}
+.prog1 p::after{
+    content: "55%";
+    position: absolute;
+    background-color: var(--black-color);
+    right: -7px;
+    top: -26px;
+    FONT-SIZE: 12px;
+    color: var(--white-color);
+    padding: 2px 3px;
+
+
+}
+.prog1 p::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: var(--black-color);
+    transform: rotate(45deg);
+    position: absolute;
+    right: 0;
+    top: -17px;
+}
+.prog2 p::after{
+    content: "85%";
+    position: absolute;
+    background-color: var(--black-color);
+    right: -7px;
+    top: -26px;
+    FONT-SIZE: 12px;
+    color: var(--white-color);
+    padding: 2px 3px;
+
+
+}
+.prog2 p::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: var(--black-color);
+    transform: rotate(45deg);
+    position: absolute;
+    right: 0;
+    top: -17px;
+}
+.prog3 p::after{
+    content: "15%";
+    position: absolute;
+    background-color: var(--black-color);
+    right: -7px;
+    top: -26px;
+    FONT-SIZE: 12px;
+    color: var(--white-color);
+    padding: 2px 3px;
+
+
+}
+.prog3 p::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: var(--black-color);
+    transform: rotate(45deg);
+    position: absolute;
+    right: 0;
+    top: -17px;
+}
+/* ==================form ================= */
+form {
+    background-color: #4e505c;
+    height: 523px;
+    padding: 76px 67px;
+
+}
+.info-form h1{
+    font-size: 3em;
+    color: white;
+}
+.info-form h3{
+    color: #9f9f9f;
+}
+.info-form span{
+    color: var(--blue-color);
+}
+.form .input{
+    
+    width: 266px;
+    height: 66px;
+    border-radius: 15px;
+    border: none;
+    margin: 6px 0px;
+
+}
+.your-name{
+    width: 564px;
+    display: flex;
+    justify-content: space-between;
+}
+.form small{
+    position: absolute;
+    margin: 7px 13px;
+    COLOR: gray;
+    opacity: 0.7;
+}
+.form{
+        MARGIN: 42px 215px;
+
+}
+.first-name , .last-name{
+    position: relative;
+}
+.first-name ion-icon , .last-name ion-icon {
+    position: absolute;
+    right: 9px;
+    font-size: 26px;
+    TOP: 20px;
+}
+
+#email{
+    width: 569px;
+}
+#pass{
+    width: 569px;
+    margin: -21px 0;
+}
+.btn2{
+    MARGIN: 39px 151px;
+    BORDER-RADIUS: 52px;
+    background: blue;
+    color: white;
+    font-size: 19px;
+    font-weight: 700;
+    width: 266px;
+    height: 66px;
+    border: none;
+    transition: .5s;
+}
+.scroll-up{
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    padding: 8px 11px;
+    background-color: var(--white-color);
+    box-shadow: -1px 6px 16px #9d9d9dd6;
+    cursor: pointer;
+    transition: .3s;
+}
+.scroll-up img{
+    width: 25px;
+    height: 25px;
+    animation: scroll 2s infinite;
+    margin: -10px 0;
+
+}
+/* .show-scroll{
+    bottom:-30%;
+} */
+@keyframes scroll{
+    0%{transform: translateY(0);}
+    50%{transform: translateY(-5px);}
+    100%{transform: translateY(0);}
+}
+.scroll-up:hover{
+    transform: translateY(-10px);
+}
+.email , .password{
+    position: relative;
+}
+.email ion-icon , .password ion-icon{
+    position: absolute;
+    font-size: 25px;
+    top: 24px;
+    right: 20px;
+}
+.password ion-icon{
+    top:2px;
+}
+nav a:hover{
+    font-size: 20px;
+    padding: 10px 15px;
+    background: var(--yello-color);
+    border-radius: 23px;
+}
+.btn2:hover{
+    transform: translateY(-10px);
+    box-shadow: 1px 8px 12px grey;
+}
+form{
+    border-radius: 10px;
+}
+.password small{
+    top: -22px;
+}
+.input{
+    padding: 0 50px;
+}
+.money h3{
+    TEXT-ALIGN: center;
+    color: gray;
+    margin: 24px 0;
+}
+form{
+    margin-top: 45px ;
+}

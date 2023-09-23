@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --yello-color:rgb(245, 206, 32);
+    --black-color:#000;
+    --white-color:#fff;
+    --gray-color:rgb(152, 152, 152);
+    --light-black:rgb(53, 53, 53);
+    --gray-dark:rgb(115, 115, 115);
+    --span-color-header:#fff;
+    --blue-color: #1d0cda;
+
+}
+.home-logo{
+    display: flex;
+    align-items: center;
+
+}
+.home-logo ion-icon{
+    font-size: 30px;
+    padding-bottom: 8px;
+    justify-content: space-between;
+}
+.view-site p{
+    color: var(--white-color);
+    font-size: 18px;
+    word-spacing: 4px;
+    font-weight: 600;
+}
+.view-site span{
+    color: var(--white-color);
+}
+.view-site{
+    background-color: var(--black-color);
+    height: auto;
+    padding-top: 10px;
+    border-radius: 8px;
+    width: 98;
+    
+
+}
+.section2 {
+    width: 90%;
+    height: 100vh;
+    margin: 10px auto;
+}
+.section3{
+    width: 100%;
+}
+.section2 h3{
+    color: var(--black-color);
+    line-height: 51px;
+}
+.donation{
+    transition: all .5s;
+}
+.person h4 ,.view h4{
+    font-weight: 600;
+    margin: 0 13px 0px 11px;
+}
+.person ,.view{
+    display: flex;
+    align-items: center;
+    margin: 7px 19px;
+}
+.image {
+    height: 111px;
+    width: 111px;
+    margin: 60px 140px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 20px #bbbbbbb8;
+}
+.btn {
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+
+    border-radius: 15px;
+    transition: all .4s;
+    width: 90%;
+    padding: 10px 0;
+    margin: 0 auto;
+}
+.donation:hover {
+    transform: translateY(-10px);
+    box-shadow: -3px 10px 20px #a9a9a9;
+}
+.donation {
+    background-color: rgb(255, 255, 255);
+    height: auto;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: -2px 3px 20px #bdbdbd7a;
+    transition: all .5s;
+    
+}
+.donation h3 {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--black-color);
+}
+
+.btn:hover {
+    background-color: var(--blue-color);
+    color: white;
+    BOX-SHADOW: 2px 6px 7px #959595b7;
+}
+.btn{
+    background-color: #80808030;
+    display: flex;
+    justify-content: center;
+}
+.card-img-top{
+    height: 380px;
+}
+.row {
+    margin-top: 30px;
+}
+.prog1 P{
+    width: 55%;
+}
+.prog2 p{
+    width: 90% ;
+}
+.prog3 p{
+    width: 15% ;
+}
+
+
+.progresse{
+    margin: 30px 0;
+}
+.prog1 p::after{
+    content: "55%";
+    position: absolute;
+    background-color: var(--black-color);
+    right: -7px;
+    top: -26px;
+    FONT-SIZE: 12px;
+    color: var(--white-color);
+    padding: 2px 3px;
+
+
+}
+.prog1 p::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: var(--black-color);
+    transform: rotate(45deg);
+    position: absolute;
+    right: 0;
+    top: -17px;
+}
+.prog2 p::after{
+    content: "85%";
+    position: absolute;
+    background-color: var(--black-color);
+    right: -7px;
+    top: -26px;
+    FONT-SIZE: 12px;
+    color: var(--white-color);
+    padding: 2px 3px;
+
+
+}
+.prog2 p::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: var(--black-color);
+    transform: rotate(45deg);
+    position: absolute;
+    right: 0;
+    top: -17px;
+}
+.prog3 p::after{
+    content: "15%";
+    position: absolute;
+    background-color: var(--black-color);
+    right: -7px;
+    top: -26px;
+    FONT-SIZE: 12px;
+    color: var(--white-color);
+    padding: 2px 3px;
+
+
+}
+.prog3 p::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: var(--black-color);
+    transform: rotate(45deg);
+    position: absolute;
+    right: 0;
+    top: -17px;
+}
+.section3{
+    height: 300px ;
+}
+.prog{
+    width: 90%;
+    height: 22px;
+    border-radius: 27px;
+    background-color: var(--gray-color);
+    margin: 23px auto;
+    position: relative;
+
+}
+.prog p{
+    position: absolute;
+    background-color: var(--blue-color);
+    height: 22px;
+    border-radius: 27px;
+
+}
+.money h4{
+    TEXT-ALIGN: center;
+    color: gray;
+    margin: 24px 0;
+}
+/* ==================form ================= */
+form {
+    background-color: #4e505c;
+    height: auto;
+    padding: 11px 0;
+    display: flex;
+    justify-content: center;
+
+}
+.info-form h1{
+    font-size: 3em;
+    color: white;
+}
+.info-form h3{
+    color: #9f9f9f;
+}
+.info-form span{
+    color: var(--blue-color);
+}
+.form .input{
+    
+    width: 100%;
+    height: 66px;
+    border-radius: 15px;
+    border: none;
+    margin: 6px 0px;
+    
+
+}
+
+.form small{
+    position: absolute;
+    margin: 7px 13px;
+    COLOR: gray;
+    opacity: 0.7;
+}
+
+.first-name , .last-name , .email , .password{
+    position: relative;
+    padding: 0;
+}
+.first-name ion-icon , .last-name ion-icon , .email ion-icon , .password ion-icon{
+    position: absolute;
+    right: 9px;
+    font-size: 26px;
+    TOP: 20px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.btn2{
+    MARGIN: 39px 151px;
+    BORDER-RADIUS: 52px;
+    background: blue;
+    color: white;
+    font-size: 19px;
+    font-weight: 700;
+    width: 266px;
+    height: 66px;
+    border: none;
+    transition: .5s;
+}
+.form-container{
+    width: 50%;
+}
+.your-name ,.email , .password {
+    width: 100%;
+}
