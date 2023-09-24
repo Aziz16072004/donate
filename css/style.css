@@ -57,7 +57,7 @@ nav {
     padding-top: 100px;
 }
 .line {
-    WIDTH: 512px;
+    WIDTH: 100%;
     background: var(--gray-color);
     height: 2px;
     margin: 67px 0px;
@@ -75,6 +75,9 @@ nav {
     font-size: 14px;
     color: var(--gray-color);
 }
+.container-fluid{
+    padding: 7px;
+}
 .main h2 {
     font-size: 23px;
     word-spacing: 7px;
@@ -90,6 +93,26 @@ nav {
         display: none !important;
         width: 0;
     }
+    .main-content h1{
+        font-size: 10vw;
+    }
+    .navbar-collapse{
+        background-color: #6b6b6bfa;
+    }
+    .scroll-header .navbar-collapse{
+        background-color: var(--white-color);
+    }
+    .scroll-header{
+        background-color: white;
+        width: 100%;
+    }
+    .scroll-header h1 ,
+    .scroll-header ion-icon,
+    .scroll-header a
+    {
+        color: var(--black-color) !important;
+    
+    }
 }
 @media screen and (max-width: 550px) {
     
@@ -98,7 +121,6 @@ nav {
         height: 100%;
         margin: 0;
         padding: 0;
-        overflow-x: hidden;
     }
 }
 
@@ -197,7 +219,9 @@ nav {
 .card-img-top{
     height: 380px;
 }
-
+.card{
+    margin: 20px 0;
+}
 .prog1 P{
     width: 55%;
 }
@@ -328,11 +352,15 @@ form {
     border-radius: 15px;
     border: none;
     margin: 6px 0px;
-    
-
 }
-#header{
+.navbar-collapse{
+    
+    z-index:1010;
+}
+.navbar{
     padding: 9px;
+    box-shadow: 3px 2px 12px 3px #808080e3;
+
 }
 .form small{
     position: absolute;
